@@ -11,8 +11,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <Providers>
         {/* HEADER */}
-        <Header />
-        <body>{children}</body>
+        <body>
+          <Header />
+          {children}
+        </body>
       </Providers>
     </html>
   );
