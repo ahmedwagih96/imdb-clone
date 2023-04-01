@@ -4,7 +4,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="max-w-6xl mx-auto space-y-4">
+    <div className="max-w-6xl mx-auto space-y-4 px-2">
       <h1 className="text-2xl font-medium text-amber-600">About</h1>
       <div>
         <p>IMDb (an acronym for Internet Movie Database) is an online database of information related to films, television series, podcasts, home videos, video games, and streaming content online including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews. </p>

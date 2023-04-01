@@ -13,3 +13,11 @@ export enum Themes {
   Light = "light",
 }
 
+export enum NavbarItemsTitle {
+  Trending = "Trending",
+  TopRated = "Top Rated",
+}
+export enum NavbarItemsParams {
+  Trending = "fetchTrending",
+  TopRated = "fetchTopRated",
+}
