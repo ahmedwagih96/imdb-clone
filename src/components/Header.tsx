@@ -1,5 +1,6 @@
 import { Pages, Routes } from "@/types";
-import MenuItem from "./MenuItem";
+import MenuItem from "@/components/MenuItem";
+import DarkModeSwitch from "@/components/DarkModeSwitch";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoSquareFill } from "react-icons/bs";
 import Link from "next/link";
@@ -16,7 +17,8 @@ function Header() {
         />
       </div>
       {/* RIGHT SIDE */}
-      <div>
+      <div className="flex items-center gap-5">
+        <DarkModeSwitch />
         <Link href={Routes.About}>
           <h2 className="text-2xl">
             <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg">
