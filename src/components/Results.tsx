@@ -1,14 +1,15 @@
-import { Result } from "@/types";
+import { Movie } from "@/types";
+import MovieCard from "@/components/MovieCard";
 
 type Props = {
-  results: Result[];
+  movies: Movie[];
 };
 
-function Results({ results }: Props) {
+function Results({ movies }: Props) {
   return (
-    <div>
-      {results.map((result: Result) => (
-        <div key={result.id}>{result.original_title}</div>
+    <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4">
+      {movies.map((movie: Movie) => (
+        <MovieCard key={movie.id} movie = {movie}/>
       ))}
     </div>
   );

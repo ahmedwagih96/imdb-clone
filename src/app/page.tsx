@@ -1,6 +1,6 @@
 import Results from "@/components/Results";
 import { Fetch } from "@/types";
-import { Result } from "@/types";
+import { Movie } from "@/types";
 const API_KEY = process.env.API_KEY;
 
 type HomePageTypes = {
@@ -22,10 +22,10 @@ export default async function Home({ searchParams }: HomePageTypes) {
   }
 
   const data = await res.json();
-  const results: Result[] = data.results;
+  const movies: Movie[] = data.results;
   return (
     <div>
-      <Results results={results} />
+      <Results movies={movies} />
     </div>
   );
 }
