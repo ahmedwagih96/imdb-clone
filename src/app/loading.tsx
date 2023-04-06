@@ -1,13 +1,9 @@
-import React from 'react'
-import FadeLoader  from "react-spinners/FadeLoader";
-type Props = {}
-
-function Loading({}: Props) {
+function Loading() {
   return (
-    <div className='flex justify-center'>
-        <FadeLoader color="#F59E0B" />
+    <div className="flex justify-center">
+      <img src="spinner.svg" alt="loading" className="h-96" />
     </div>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

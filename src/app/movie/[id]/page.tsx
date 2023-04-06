@@ -7,7 +7,7 @@ type Props = {
 };
 
 async function MoviePage({ params }: Props) {
-  const movieId = params.id;
+  const movieId: string = params.id;
   const movie: Movie = await getMovie(movieId);
   return (
     <div className="w-full">
